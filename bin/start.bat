@@ -1,0 +1,1 @@
+start "ÍøÂçÁÄÌìÊÒ" /D  ..\out\production\MiniChatRoom java org.dongnaoedu.net.ChatRoomClient
