@@ -1,4 +1,6 @@
-package org.dongnaoedu.net;
+package org.dongnaoedu.net.bio;
+
+import org.dongnaoedu.net.Util;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -12,7 +14,7 @@ import static org.dongnaoedu.net.Util.*;
 /**
  * 聊天室服务端
  */
-public class ChatRoomServer {
+public class ChatRoomService {
     static ExecutorService executors = Executors.newCachedThreadPool();
     static Map<String, Client> clients = new ConcurrentHashMap();
 

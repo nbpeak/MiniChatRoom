@@ -1,4 +1,4 @@
-package org.dongnaoedu.net;
+package org.dongnaoedu.net.bio;
 
 import java.io.*;
 import java.net.Socket;
@@ -17,7 +17,7 @@ public class ChatRoomClient {
         Scanner scanner = new Scanner(System.in);
         log("正在连接聊天室服务器......");
         try {
-            Socket socket = new Socket("127.0.0.1", 9081);
+            Socket socket = new Socket("120.25.203.154", 9081);
             // 注册jvm退出时的钩子线程，用于在jvm退出时，关闭网络连接
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
                 try {
